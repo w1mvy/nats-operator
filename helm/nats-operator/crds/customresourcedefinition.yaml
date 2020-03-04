@@ -3,7 +3,6 @@ kind: CustomResourceDefinition
 metadata:
   name: natsclusters.nats.io
   annotations:
-    "helm.sh/hook": "crd-install"
     "helm.sh/hook-delete-policy": "before-hook-creation"
 spec:
   group: nats.io
@@ -22,7 +21,6 @@ kind: CustomResourceDefinition
 metadata:
   name: natsserviceroles.nats.io
   annotations:
-    "helm.sh/hook": "crd-install"
     "helm.sh/hook-delete-policy": "before-hook-creation"
 spec:
   group: nats.io
